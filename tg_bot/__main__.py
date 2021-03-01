@@ -24,7 +24,6 @@ I'm {} ,an powerful group management bot build to help you manage your group eas
 *❓How to Use me?*
 Check Out /help to view the full list of the commands of the bot!
 """
-reply_markup=InlineKeyboardMarkup(
 [[InlineKeyboardButton(text="Report Bugs",
                        url="t.me/PmsHere".format(
                            bot.username))]]))
