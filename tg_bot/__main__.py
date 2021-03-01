@@ -23,8 +23,11 @@ I'm {} ,an powerful group management bot build to help you manage your group eas
 
 *❓How to Use me?*
 Check Out /help to view the full list of the commands of the bot!
-[[InlineKeyboardButton(text="Report Bugs", url="t.me/PmsHere".format( bot.username))]]))
 """
+reply_markup=InlineKeyboardMarkup(
+[[InlineKeyboardButton(text="Report Bugs",
+                       url="t.me/PmsHere".format(
+                           bot.username))]]))
 
 HELP_STRINGS = """
 
@@ -35,7 +38,6 @@ HELP_STRINGS = """
    - in PM: To find out what SETTINGS you have set....
    - in a group:
 
-{}
 And The Following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
 
