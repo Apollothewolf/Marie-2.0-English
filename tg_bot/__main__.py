@@ -18,7 +18,7 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Heya {} What's Up😤,Nice To Meet You !
+Heya {} Nice To Meet You !
 I'm {} ,an powerful group management bot build to help you manage your group easily.
 
 *❓How to Use me?*
@@ -26,7 +26,7 @@ Check Out /help to view the full list of the commands of the bot!
 """
 buttons=[[InlineKeyboardButton(text="Report Bugs",
                        url="t.me/PmsHere".format(
-                           bot.username))]]))
+                           bot.username))]]
 
 HELP_STRINGS = """
 
